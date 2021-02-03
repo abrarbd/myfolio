@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#7e8287;
+}
+img{
+    /*width: 100%;*/
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+}
+ul,li,{
+    margin:0;
+    padding:0;
+}
+ul,ol{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration:none;
+}
+.common_title h3{
+    font-size:46px;
+    font-weight: 800;
+    color: #02918c;
+}
+.common_titlej span{
+    font-size:16px;
+    color:#7e8287;
+}
+.center{
+    text-align:center;
+}
+.right{
+    text-align:right;
+}
+.left{
+    text-align:left;
+}
+/*========== Common Css End ==========*/
+.header_area{}
+.header_menu_area{
+    background:#02918c;
+    padding:15px 0;
+}
+.header_menu_area .logo{}
+.header_menu_area .logo img{
+   
+}
+.header_menu_area .menu{}
+.header_menu_area .menu ul{
+    text-align: right;
+}
+.header_menu_area .menu ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.header_menu_area .menu ul li a{
+    font-size:12px;
+    color:#fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all ease .5s;
+    
+}
+.header_menu_area .menu ul li a:hover{
+    color:#cfc91d;
+}
+/*========== Header Menu Css End ==========*/
+.header_banner_area{
+    background:url('../img/banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:200px 0;
+}
+.header_ban_con{
+    text-align:center;
+}
+.header_ban_con h2{
+    font-size:35px;
+    color:#fff;
+}
+.header_ban_con h1{
+    font-size:68px;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-weight: 800;
+}
+.header_ban_con h4{
+    font-size:18px;
+    color:#fff;
+}
+.header_ban_con img{
+    margin:40px auto;
+    display: block;
+}
+.header_ban_con .h_btn{
+    display:inline-block;
+    border:1px solid #cfc91d;
+    padding: 15px 44px;
+    color:#fff;
+    font-weight: 800;
+    position:relative;
+    z-index:1;
+}
+.header_ban_con .h_btn:after{
+    background:#cfc91d;
+    content:"";
+    width:0;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:all ease-in .5s;
+    z-index:-1;
+}
+.header_ban_con .h_btn:hover{
+    color:#0b1016;
+}
+.header_ban_con .h_btn:hover:after{
+    width:100%;
+}
+/*========== Header Banner Css End ==========*/
+.about_area{
+    padding:80px 0;
+}
+
+.about_con p{
+    text-align:center;
+    font-size:16px;
+    padding: 0 90px;
+}
+.about_con span{
+    font-size:23px;
+    font-weight:800;
+}
+.about_items_area{
+    padding:80px 0;
+    
+}
+.about_items{
+    text-align:center;
+    border-right:1px solid #d9dbdb;
+    padding:20px;
+}
+.bn{
+    border-right:none;
+}
+.about_items .about_icon{
+    margin-bottom:20px;
+}
+.about_items .about_title h4{
+    font-weight: 800;
+    margin-bottom:20px;
+}
+.about_items .about_item_con p{
+    font-size:11px;
+    text-align:center;
+}
+/*========== About Css End ==========*/
+.service_area{
+    padding:80px 0px 80px 0px;
+    background:url('../img/sbg.jpg') no-repeat;
+    background-size: cover;
+}
+.ser_con{}
+.ser_con p{
+    font-size:16px;
+    margin-bottom:60px;
+}
+.service_item_area{}
+.service_item{
+    text-align:left;
+}
+.service_icon img{
+    margin-bottom:20px;
+    
+}
+.service_title h4{
+    font-size:14px;
+    font-weight: 800;
+    margin-bottom:20px;
+}
+.service_cont p{
+    font-size:11px;
+    text-align:left;
+    margin-bottom:50px;
+}
+.ser_bg img{
+    width:100%,
+}
+/*========== Service Css End ==========*/
+.work_area{
+    padding:80px 0;
+}
+.work_con p{
+    padding: 30px 90px 80px;
+    font-size:16px;
+    line-height: 1.8;
+}
+.work_img{}
+.work_items{
+    position:relative;
+}
+.work_items img{
+    width: 100%;
+    height: 238px;
+    cursor: pointer;
+}
+.work_overlay{
+    background:rgba(2, 145, 140, 0.85);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    transform: scale(0%);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition:.5s;
+
+}
+.work_items:hover .work_overlay{
+    opacity:1;
+    visibility: visible;
+    transform: scale(85%);
+}
+.work_overlay .work_overlay_title h4{
+    color:#fff;
+    margin-bottom:20px;
+}
+.work_overlay .work_overlay_con p{
+    font-size:13px;
+    color:#fff;
+    padding:0 30px;
+    line-height: 2;
+}
+.w-m-r{
+    padding:0;
+}
+/*========== My Work Css End ==========*/
+.contact_area{
+
+}
+.contact_con p{
+    padding: 30px 90px 80px;
+    font-size:16px;
+    line-height: 1.8;
+}
+.contact_form{
+    padding:50px 0;
+    background: #0b0b0b;
+}
+.contact_form .nam,
+.contact_form .eml,
+.contact_form .msg
+{
+    border-bottom:1px solid #898989;
+    width:60%;
+    padding:5px 5px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.contact_form input,textarea{
+    display: block;
+    border:none;
+    background: transparent;
+    color:#7e8287;
+    resize: none;
+}
+.contact_form input,textarea:focus{
+    outline: none;
+}
+.contact_form .c_btn{
+    text-align: center;
+    margin:70px 0;
+}
+.contact_form .f_btn{
+    background: #cfc91d;
+    padding:20px 70px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#0b1016;
+    font-weight: 800;
+    font-size:14px;
+    border:none;
+}
+/*========== Contact Css End ==========*/
+.footer_area{
+    background: #000000;
+    padding:30px 0;
+}
+.f_con{}
+.f_con p{
+    font-size:12px;
+    text-align: center;
+}
